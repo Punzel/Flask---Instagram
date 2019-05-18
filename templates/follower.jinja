@@ -1,0 +1,15 @@
+{% extends 'base.jinja' %}
+
+{% block title %}Flaskspiel - Follower hier{% endblock %}
+
+{% block content %}
+<h1>Interner Bereich</h1>
+<p>
+Follower
+<br /><br />
+<br> <br>
+<a href="{{ url_for('follower', id_user=user.id) }}">Follower</a>
+<br> <br>
+<a href="{{ url_for('logout') }}">Logout</a>
+</p>
+{% endblock %}

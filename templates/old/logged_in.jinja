@@ -1,0 +1,44 @@
+{% extends 'base.jinja' %}
+
+{% block title %}INSTAGRAM {% endblock %}
+
+{% block content %}
+<h1>Instagram App</h1>
+<p>
+<br>
+<style>
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+.btn:hover {background: #eee;}
+.default {color: black;}
+</style>
+
+</head>
+<body>
+<br>
+
+Logged in
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a href="{{ url_for('following') }}" class="btn default"> Following</a>
+<br> <br>
+<button class="btn default" >Follower</button>
+<br /><br />
+<button class="btn default">Following</button>
+<br /><br />
+
+</p>
+{% endblock %}

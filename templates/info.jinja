@@ -1,0 +1,36 @@
+{% extends 'base.jinja' %}
+
+{% block title %} API TEST{% endblock %}
+
+{% block content %}
+<h1>THIS IS A TEST</h1>
+<p>
+<br />
+<br>
+<table border="1" cellpadding="5" cellspacing="5">
+
+
+<br />
+You have {{follower}} Followers. <br>
+You are following {{following}} .
+<br />   
+<br />
+<br />   
+Show my unfollowers: 
+<a href="{{ url_for('unfollowers', user_id=user.id) }}">Unfollowers</a>
+<br> <br> 
+Back to logged in: 
+<a href="{{ url_for('logged_in') }}">Back</a>
+<br />   
+<br />
+<br />
+<list>
+{% for n in n_follow %}
+   <li> {{ n }} </li>
+{% endfor %}
+</list>
+
+ 
+
+</p>
+{% endblock %}

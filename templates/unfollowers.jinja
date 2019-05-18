@@ -1,0 +1,25 @@
+{% extends 'base.jinja' %}
+
+{% block title %} Unfollowers{% endblock %}
+
+{% block content %}
+<h1>Unfollowers</h1>
+<p>
+<br />
+<br>
+<table border="1" cellpadding="5" cellspacing="5">
+
+<body>
+     {% for item in not_following_back %}
+      <ul>
+         <li>{{ item.not_following_back }}</td></li>
+     
+      </ul>
+   </body>
+   
+
+<br />
+   
+
+</p>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.jinja' %}
+
+{% block title %}Flaskspiel - Interner Bereich{% endblock %}
+
+{% block content %}
+<h1>Interner Bereich</h1>
+<p>
+Du bist jetzt eingeloggt und kannst diese Seite nur deswegen sehen.
+<br /><br />
+<br> <br>
+{% for user in users %}
+<a href="{{ url_for('info', user_id=user.id) }}">Info</a>
+<br /><br />
+{% endfor %}
+<br> <br>
+<a href="{{ url_for('logout') }}">Logout</a>
+</p>
+{% endblock %}
